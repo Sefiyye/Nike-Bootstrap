@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    .header-top {
+      height: 40px;
+      background-color: whitesmoke;
+      .container {
+        height: 100%;
+        .row {
+          height: 100%;
+          ul {
+            margin: 0 !important;
+          }
+          .registration {
+            ul {
+              li:not(:last-child) {
+                &::after {
+                  content: "|";
+                  position: relative;
+                  left: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-bottom {
+      .container {
+        .row {
+          ul {
+            margin: 0;
+          }
+          .search-basket {
+            .search {
+              input {
+                border-radius: 20px;
+              }
+            }
+            .basket-wish {
+              display: flex;
+              align-items: center;
+              ul {
+                width: 80px;
+                li {
+                  i {
+                    font-size: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+ul{
+   li{
+       a{
+         text-decoration: none;
+         color: black;
+        }
+    }
+}
+
+.new:hover{
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+.men:hover{
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+.women:hover{
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+.kids:hover{
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+.sale:hover{
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+
+@media screen and (max-width:1062px) {
+    .nav-links{
+        .sale{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:1006px){
+    .nav-links{
+        .kids{
+            display: none;
+        }
+    } 
+}
+// @media screen  and (max-width:961px){
+//    .registration{
+//        display: none;
+//    }
+// }
+
+@media screen and (max-width: 768px){
+    .backet{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .header-top{
+        display: none;
+        
+    }
+    
+    .header-main{
+        display: none;
+    }
+    .header-bottom{
+        display: none;
+    }
+}
